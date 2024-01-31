@@ -1,0 +1,375 @@
+/* default setting start */
+:root {
+  --vegetable: #038007;
+  --black: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-weight: 300;
+}
+/* default setting end */
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  color: #000000;
+  min-height: 1500px;
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 4px solid var(--vegetable);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #000000;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--vegetable);
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--vegetable);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--vegetable);
+  transform: scaleX(0);
+  transition: linear 0.3s;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.7);
+}
+
+/* home page start */
+.landing {
+  background-color: rgb(255, 255, 255);
+  padding-top: 6.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing .judul {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.landing .deskripsi {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.landing .deskripsi span {
+  color: var(--vegetable);
+}
+
+.landing img {
+  height: auto;
+  max-width: 45%;
+}
+
+.landing .show-butt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.landing .show-butt .prev,
+.landing .show-butt .next {
+  margin-right: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: var(--vegetable);
+  border-radius: 10px;
+  padding: 0.3rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* landing page end
+
+/* our package start */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.product .judul {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product .deskripsi span {
+  color: var(--vegetable);
+}
+
+.product .deskripsi {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.product .row .package-card {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.product .row .package-card-img {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.product .row .package-card-title {
+  margin-top: 2rem auto 0.5rem;
+}
+
+/* our package end
+
+/* contact us start */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.contact .judul {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .deskripsi {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.contact .deskripsi span {
+  color: var(--vegetable);
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #034305;
+}
+
+.contact p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 1rem;
+}
+
+.contact .support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 1.5rem 2.5rem;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 15rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 2px solid #eee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: none;
+  color: #000000;
+}
+
+.contact .row form .input-group .error-message {
+  color: red;
+  font-size: large;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact .row form #btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--vegetable);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact .row form #btn:hover {
+  background-color: #010101;
+  transition: 0.5s;
+}
+
+/* contact us end */
+
+/* footer start */
+footer {
+  background-color: var(--vegetable);
+  text-align: center;
+  padding: 0.2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+}
+
+footer .sosmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+footer .sosmed a {
+  color: #fff;
+  margin: 1rem;
+  transition: linear 0.3s;
+}
+
+footer .sosmed a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  padding: 1rem 0 0;
+  color: #fff;
+  text-align: center;
+}
+
+footer .credit a {
+  color: #fff;
+  font-weight: 500;
+}
+/* Footer Section Finish */
+
+@media only screen and (max-width: 820px) {
+  .responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing img {
+    height: auto;
+    max-width: 75%;
+  }
+
+  .product .row .package-card-img {
+    width: 60%;
+  }
+
+  footer {
+    padding: 0.2rem 45%;
+  }
+
+  footer .credit {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .landing img {
+    height: auto;
+    max-width: 75%;
+  }
+
+  .product .row .package-card-img {
+    width: 40%;
+  }
+
+  .contact .row form {
+    flex: 1 1 25rem;
+    padding: 3rem 7rem;
+    text-align: center;
+  }
+
+  footer {
+    padding: 0.2rem 35%;
+  }
+}

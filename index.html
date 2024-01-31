@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ananda Novianshaf" />
+    <title>Dracories</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="responsive">
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">dra<span>cories</span></a>
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#package">Our-Package</a>
+          <a href="#contact">Call Us</a>
+        </div>
+      </nav>
+
+      <section class="landing" id="home">
+        <h1 class="judul">Top Rated E-Groceries Shop in Indonesia</h1>
+        <h2 class="deskripsi">
+          Dra<span>cories</span> Provide You a Journey to Find the Best
+          Ingredients
+        </h2>
+        <img src="img/groceries-1.jpg" alt="1" class="img-slideshow" />
+        <img src="img/groceries-2.jpg" alt="2" class="img-slideshow" />
+        <img src="img/groceries-3.jpg" alt="3" class="img-slideshow" />
+        <img src="img/groceries-4.jpg" alt="4" class="img-slideshow" />
+
+        <div class="show-butt">
+          <button class="prev" onclick="plusDivs(-1)">Previous</button>
+          <button class="next" onclick="plusDivs(1)">Next</button>
+        </div>
+      </section>
+
+      <section class="product" id="package">
+        <h1 class="judul">Welcome to Our Package</h1>
+        <h2 class="deskripsi">
+          below is our newest product that you can buy, so much variety and of
+          course in a <span>fresh</span> condition
+        </h2>
+        <div class="row">
+          <div class="package-card">
+            <img src="img/fruit.jpg" alt="fruit" class="package-card-img" />
+            <h3 class="package-card-title">- fruit -</h3>
+            <p class="package-card-price">healthy</p>
+          </div>
+
+          <div class="package-card">
+            <img
+              src="img/vegetables.jpg"
+              alt="vegetables"
+              class="package-card-img"
+            />
+            <h3 class="package-card-title">- vegetables -</h3>
+            <p class="package-card-price">nutritious</p>
+          </div>
+
+          <div class="package-card">
+            <img src="img/breads.jpg" alt="breads" class="package-card-img" />
+            <h3 class="package-card-title">- breads -</h3>
+            <p class="package-card-price">satiate</p>
+          </div>
+
+          <div class="package-card">
+            <img src="img/drinks.jpg" alt="drinks" class="package-card-img" />
+            <h3 class="package-card-title">-drinks-</h3>
+            <p class="package-card-price">refreshing</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h1 class="judul">Here is Our Contact</h1>
+        <h2 class="deskripsi">
+          if you're interested and wanted to buy the product, you can
+          <span>contact us</span> below
+        </h2>
+        <div class="row">
+          <form action="">
+            <h1 class="support">Dracories Support</h1>
+            <p>enter your full name</p>
+            <div class="input-group">
+              <input id="input-name" type="text" placeholder="name" />
+              <p id="error-name" class="error-message"></p>
+            </div>
+            <p>enter your email</p>
+            <div class="input-group">
+              <input id="input-email" type="text" placeholder="e-mail" />
+              <p id="error-email" class="error-message"></p>
+            </div>
+            <p>enter your phone number</p>
+            <div class="input-group">
+              <input id="input-phone" type="text" placeholder="phone" />
+              <p id="error-phone" class="error-message"></p>
+            </div>
+            <div>
+              <button type="submit" id="btn">send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          <div class="sosmed">
+            <a href="https://www.instagram.com/nannd_nvs/">
+              <p>IG</p>
+            </a>
+            <a href="https://github.com/NotMyTimeNVS2511">
+              <p>GITHUB</p>
+            </a>
+            <a href="https://youtube.com/@nandanvs610?si=x7MFXYY698DHE64m">
+              <p>YT</p>
+            </a>
+          </div>
+
+          <div class="credit">
+            <p>Created by <a href="">anandanovianshaf.</a> | &copy; 2023.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
